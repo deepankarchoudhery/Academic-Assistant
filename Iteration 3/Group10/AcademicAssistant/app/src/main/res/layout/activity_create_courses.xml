@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Presentation.CreateCourses">
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create/Edit a Course"
+        android:id="@+id/titleTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="34dp"
+        android:textStyle = "bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Department Code:"
+        android:id="@+id/deptTextView"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/titleTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:maxLength="4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/deptEditText"
+        android:hint="e.g. &quot;COMP&quot;"
+        android:layout_marginStart="22dp"
+        android:layout_alignBottom="@+id/deptTextView"
+        android:layout_toEndOf="@+id/deptTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Course Number:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/deptTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/courseNumEditText"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/deptEditText"
+        android:hint="e.g. &quot;3350&quot;" />
+
+    <Button
+        tools:ignore="HardcodedText"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Add Course"
+        android:id="@+id/submitCourseBtn"
+        android:padding="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="comp3350group10.academicassistant">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".Presentation.HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Presentation.ViewTerms" />
+        <activity android:name=".Presentation.CreateTerm" />
+        <activity android:name=".Presentation.ViewTerm" />
+        <activity android:name=".Presentation.DeleteTerm" />
+        <activity android:name=".Presentation.DeleteCourses" />
+        <activity android:name=".Presentation.CreateCourses" />
+        <activity android:name=".Presentation.EditTermPage" />
+        <activity android:name=".Presentation.ViewCourse" />
+        <activity android:name=".Presentation.CreateCourseElement" />
+        <activity android:name=".Presentation.SetGradeGoal" />
+        <activity android:name=".Presentation.Transcript" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+
+        <activity android:name=".Presentation.DeleteCourseElement" />
+        <activity android:name=".Presentation.EditCoursePage" />
+        <activity android:name=".Presentation.ViewCourseElement"></activity>
+    </application>
+
+</manifest>

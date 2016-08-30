@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Presentation.CreateCourseElement">
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create a Course Element"
+        android:id="@+id/titleCourseElement"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="34dp"
+        android:textStyle = "bold"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD COURSE ELEMENT"
+        android:id="@+id/addCourseEBtn"
+        android:layout_below="@+id/courseETotal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="76dp"
+        android:layout_alignEnd="@+id/titleCourseElement"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title:"
+        android:id="@+id/titleCourseE"
+        android:layout_below="@+id/titleCourseElement"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="66dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Description:"
+        android:id="@+id/descriptCourseE"
+        android:layout_below="@+id/titleCourseE"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Type"
+        android:id="@+id/typeCourseE"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/descriptCourseE"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weight:"
+        android:id="@+id/weightCourseE"
+        android:layout_marginTop="87dp"
+        android:layout_below="@+id/typeCourseE"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Marks:"
+        android:id="@+id/courseETotal"
+        android:layout_below="@+id/weightCourseE"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp" />
+
+    <EditText
+        android:maxLength="15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTitle"
+        android:layout_alignBottom="@+id/titleCourseE"
+        android:layout_alignEnd="@+id/titleCourseElement"
+        android:layout_alignStart="@+id/editDescription" />
+
+    <EditText
+        android:maxLength="30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDescription"
+        android:layout_above="@+id/typeCourseE"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/editType" />
+
+    <EditText
+        android:maxLength="15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editType"
+        android:layout_above="@+id/weightCourseE"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/editCourseWeight" />
+
+    <EditText
+        android:maxLength="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editCourseWeight"
+        android:layout_above="@+id/courseETotal"
+        android:layout_alignEnd="@+id/titleCourseElement"
+        android:layout_alignStart="@+id/editTotalMarks" />
+
+    <EditText
+        android:maxLength="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTotalMarks"
+        android:layout_alignBottom="@+id/courseETotal"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

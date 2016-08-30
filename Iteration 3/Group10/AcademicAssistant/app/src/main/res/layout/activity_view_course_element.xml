@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Presentation.ViewCourseElement">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/courseElTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize = "32dp"
+        android:textStyle = "bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Achieved Marks:"
+        android:id="@+id/acheivedMTitle"
+        android:layout_marginTop="84dp"
+        android:layout_below="@+id/courseElTitle"
+        android:layout_alignEnd="@+id/percentTitle"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/courseEAchievedM"
+        android:layout_alignBottom="@+id/acheivedMTitle"
+        android:layout_toEndOf="@+id/courseElTitle"
+        android:maxLength = "5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Marks:"
+        android:id="@+id/totalMTitle"
+        android:layout_below="@+id/acheivedMTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="68dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/courseETotalMarks"
+        android:layout_alignBottom="@+id/totalMTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/courseEAchievedM" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Percentage Achieved:"
+        android:id="@+id/percentTitle"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/totalMTitle"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:maxLength = "5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/courseEPercentage"
+        android:layout_alignBottom="@+id/percentTitle"
+        android:layout_alignEnd="@+id/courseETotalMarks"
+        android:layout_alignStart="@+id/courseETotalMarks" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:id="@+id/courseEUpdateBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/courseElTitle"
+        android:layout_toEndOf="@+id/percentTitle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:id="@+id/cancelCourseEBtn"
+        android:layout_alignTop="@+id/courseEUpdateBtn"
+        android:layout_alignEnd="@+id/courseEAchievedM" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weight:"
+        android:id="@+id/weightTitle"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/courseElTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/courseEWeightView"
+        android:layout_alignEnd="@+id/cancelCourseEBtn"
+        android:layout_alignBottom="@+id/weightTitle"
+        android:layout_alignStart="@+id/courseEPercentage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
+        android:id="@+id/courseEAboutBtn"
+        android:layout_alignTop="@+id/courseEUpdateBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/totalMTitle" />
+
+</RelativeLayout>

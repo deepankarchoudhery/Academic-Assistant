@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/TROJILLO/Dropbox/School Documents/Summer 2016/COMP 3350 - Software Engineering 1/repo/AcademicAssistant/trunk/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/Users/TROJILLO/Dropbox/School Documents/Summer 2016/COMP 3350 - Software Engineering 1/repo/AcademicAssistant/trunk/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/benwolfram/Android/trunk/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/Users/benwolfram/Android/trunk/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]
